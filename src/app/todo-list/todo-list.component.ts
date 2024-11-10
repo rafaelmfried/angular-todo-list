@@ -26,6 +26,7 @@ export class TodoList {
       this.newTodoTitle = '';
       this.todos = this.todoService.getTodos();
     }
+    console.log(this.todos);
   }
 
   toggleTodoCompletion(id: number): void {

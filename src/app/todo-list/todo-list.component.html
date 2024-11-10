@@ -10,11 +10,12 @@
   <button (click)="addTodo()">Add Task</button>
 
   <ul>
-    <todo-list-item 
-      *ngFor="let todo of todos"
-      [todo]="todo"
-      (toggle)="toggleTodoCompletion($event)"
-      (remove)="removeTodo($event)">
-    </todo-list-item>
+    @for (todo of todos; track todo.id) {
+      <todo-list-item 
+        [todo]="todo"
+        (toggle)="toggleTodoCompletion($event)"
+        (remove)="removeTodo($event)">
+      </todo-list-item>
+    }
   </ul>
 </div>
