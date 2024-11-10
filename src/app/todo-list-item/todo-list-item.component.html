@@ -1,0 +1,9 @@
+<li [ngClass]="{ 'completed': todo.completed }">
+  <input 
+    type="checkbox" 
+    [checked]="todo.completed" 
+    (change)="onToggleCompletion()" 
+  />
+  <span>{{ todo.title }}</span>
+  <button (click)="onRemove()">Remove</button>
+</li>

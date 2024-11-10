@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 // import { RouterOutlet } from '@angular/router'; -> Retirei do import e funcionou, tem haver com o app.config e app.routers ?
-import { TodoList } from '../todo-list/todo-list.component';
+import { TodoList } from './todo-list/todo-list.component';
 
 @Component({
   selector: 'app-root',
